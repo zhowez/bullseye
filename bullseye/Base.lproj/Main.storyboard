@@ -58,13 +58,16 @@
                                 <rect key="frame" x="79" y="109" width="395" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="sliderMoved:" destination="BYZ-38-t0r" eventType="valueChanged" id="mdi-zT-S59"/>
+                                    <action selector="sliderMoved:" destination="BYZ-38-t0r" eventType="valueChanged" id="I7R-Mc-epw"/>
                                 </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKa-tp-LmZ">
                                 <rect key="frame" x="20" y="249" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Start Over"/>
+                                <connections>
+                                    <action selector="restart" destination="BYZ-38-t0r" eventType="touchUpInside" id="qgx-lw-cdc"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSr-7b-fJ8">
                                 <rect key="frame" x="164" y="253" width="50" height="21"/>
@@ -97,13 +100,18 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19H-0a-cVJ">
                                 <rect key="frame" x="487" y="252" width="22" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="gameInfo" destination="BYZ-38-t0r" eventType="touchDown" id="TeN-A2-rke"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="slider" destination="P69-pV-pR9" id="Jpv-Pg-woK"/>
+                        <outlet property="roundLabel" destination="NC4-RM-OUU" id="Vd5-Za-4cY"/>
+                        <outlet property="scoreLabel" destination="T3f-o3-jaY" id="znk-Fl-1Rv"/>
+                        <outlet property="slider" destination="P69-pV-pR9" id="1el-sg-H9N"/>
                         <outlet property="targetLabel" destination="Pl3-OR-ZBp" id="R3M-EP-y2Z"/>
                     </connections>
                 </viewController>
